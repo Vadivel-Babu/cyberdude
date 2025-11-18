@@ -9,11 +9,12 @@
   <body>
     <header class="header">
       <h1 class="logo">WD</h1>
-      <nav>
+      <nav class="nav">
         <a href="#" class="nav__link"> Home </a>
         <a href="#" class="nav__link"> About </a>
-        <a href="#" class="nav__link"> Project </a>
-        <a href="#" class="nav__link"> Contact</a>
+        <a href="#skill" class="nav__link"> Project </a>
+        <a href="#contact" class="nav__link"> Contact</a>
+        <img src="./images/Arrow 1.svg" class="mobile__link" alt="arrow" />
       </nav>
     </header>
     <main>
@@ -22,7 +23,8 @@
           <div class="content">
             <div class="content__left">
               <h1 class="title">
-                Learn Web Development from <span>Zero to Pro</span>.
+                Learn Web Development from
+                <span class="span">Zero to Pro</span>.
               </h1>
               <p class="description">
                 Learn web development through practical projects, modern tools,
@@ -38,7 +40,7 @@
           </div>
         </div>
       </section>
-      <section class="skill">
+      <section class="skill" id="skill">
         <div class="container">
           <h1 class="skill__title">What you Learn</h1>
           <div class="card__wrapper">
@@ -54,6 +56,31 @@
           </div>
         </div>
       </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h1 class="skill__title">Contact Us</h1>
+          <div class="container">
+            <form class="form">
+              <input type="text" name="name" placeholder="Name" class="input" />
+              <input
+                type="mail"
+                name="email"
+                placeholder="Email"
+                class="input"
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                class="input"
+              ></textarea>
+              <button class="btn btn__submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>@copyright 2025 for WD</p>
+      </footer>
     </main>
   </body>
 </html>
